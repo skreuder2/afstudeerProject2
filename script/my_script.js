@@ -52,49 +52,49 @@ $(document).ready(function(){
 
     ads.sort(randomize);
 
-	$("div.ad").each(function(i){
-        $(this).append('<img src="'+ads[i].img+'" width="100%">');
-	});
+// 	$("div.ad").each(function(i){
+//         $(this).append('<img src="'+ads[i].img+'" width="100%">');
+// 	});
 
-    $("p.adDescription").each(function(j){
-        $(this).html("<span class = 'adDescName'>"+ ads[j].name + "</span>" + ads[j].desc);
-    });
+//     $("p.adDescription").each(function(j){
+//         $(this).html("<span class = 'adDescName'>"+ ads[j].name + "</span>" + ads[j].desc);
+//     });
 
-    $("div.time").each(function(j){
-        $(this).html(times[getRandomInt(0, 4)]);
-    });
+//     $("div.time").each(function(j){
+//         $(this).html(times[getRandomInt(0, 4)]);
+//     });
 
-    $("div.adName").each(function(k){
-        $(this).html(ads[k].name);
-    });
+//     $("div.adName").each(function(k){
+//         $(this).html(ads[k].name);
+//     });
 
-    $("div.adProfileImg").each(function(l){
-        $(this).append('<img class="adProfileContent" src="'+ads[l].profile+'"/>');
-    });
+//     $("div.adProfileImg").each(function(l){
+//         $(this).append('<img class="adProfileContent" src="'+ads[l].profile+'"/>');
+//     });
 
 
     // ---------------- //
 
-    // $("div.ad").each(function(i){
-    //     $(this).append('<img src="'+adsStatic[i].img+'" width="100%">');
-    // });
-    //
-    // $("p.adDescription").each(function(j){
-    //     $(this).html("<span class = 'adDescName'>"+ adsStatic[j].name + "</span>" + ads[j].desc);
-    // });
-    //
-    //
-    // $("div.time").each(function(j){
-    //     $(this).html(times[getRandomInt(0, 4)]);
-    // });
-    //
-    // $("div.adName").each(function(k){
-    //     $(this).html(adsStatic[k].name);
-    // });
-    //
-    // $("div.adProfileImg").each(function(l){
-    //     $(this).append('<img class="adProfileContent" src="'+adsStatic[l].profile+'"/>');
-    // });
+    $("div.ad").each(function(i){
+        $(this).append('<img src="'+adsStatic[i].img+'" width="100%">');
+    });
+    
+    $("p.adDescription").each(function(j){
+        $(this).html("<span class = 'adDescName'>"+ adsStatic[j].name + "</span>" + ads[j].desc);
+    });
+    
+    
+    $("div.time").each(function(j){
+        $(this).html(times[getRandomInt(0, 4)]);
+    });
+    
+    $("div.adName").each(function(k){
+        $(this).html(adsStatic[k].name);
+    });
+    
+    $("div.adProfileImg").each(function(l){
+        $(this).append('<img class="adProfileContent" src="'+adsStatic[l].profile+'"/>');
+    });
 
 
 });
